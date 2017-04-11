@@ -77,7 +77,7 @@ app.put('/api/todos/:id', function update(req, res) {
 app.delete('/api/todos/:id', function destroy(req, res) {
    var id = req.params._id-1;
    todos[id] = null;
-   res.send(todos[id]);
+   res.json(todos[id]);
 });
 
 /**********
